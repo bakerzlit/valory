@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="question-container" class="container">
+        <h1 class="header-text">Will you be my Valentine?</h1>
+
+        <div class="gif-container">
+            <img src="question.gif" alt="Cute Capoo GIF">
+        </div>
+
+        <div class="buttons">
+            <button class="yes-button" id="yesBtn" onclick="handleYesClick()">Yes</button>
+            <button class="no-button" id="noBtn" onclick="handleNoClick()">No</button>
+        </div>
+    </div>
+
+    <div id="success-container" class="container hidden">
+        <h1 class="header-text">Knew you would say yes! ❤️</h1>
+
+        <div class="gif-container">
+            <img src="success.gif" alt="Capoo Hugging GIF">
+        </div>
+
+        <div id="lyrics-module">
+            <div class="lyrics-container">
+                <div class="lyrics-label">NOW SINGING</div>
+                <div id="lyricDisplay">Tap anywhere to start the song...</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="music-player" class="music-player">
+        <img src="album-cover.jpg" id="albumDisk" class="album-cover" alt="Album Cover">
+        <div class="music-info">♫ Music</div>
+        <audio id="bgMusic" loop>
+            <source src="music.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
